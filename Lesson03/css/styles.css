@@ -10,12 +10,22 @@ steelblue
 
 /* Global styles
 -------------------------*/
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
 body{
     color: rgb(43, 43, 43);
 	border: 15px steelblue groove;
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	line-height: 1.25;
 }
 img{
-    width: 300px;
+	max-height: 300px;
+	max-width: 200px;
 	border-radius: 4px;
 }
 a{
@@ -24,7 +34,16 @@ a{
 a:hover {
     text-decoration: none;
 }
+h1{
+	font-size: 75px;
+	text-shadow: 2px 2px 4px rgb(43, 43, 43);
+}
 h2{
+	font-size: 30px;
+	text-shadow: 1px 1px 2px darksalmon;
+}
+h1,h2{
+	font-family: 'Indie Flower', cursive;
 	margin: 0;
 }
 .content-wrap{
@@ -58,7 +77,52 @@ header {
 .projects .btn:hover {
     background: rgba(85, 107, 47, 80%);
 }
-.call-out{
+.project-item{
+	overflow: hidden;
+	background: white;
+	margin: 10px 0;
+	padding: 10px 25px;
+	border: darksalmon thick outset;
+	border-radius: 8px;
+	width: 600px;
+}
+.project-item img{
+	float: left;
+	margin-right: 20px;
+}
+.project-item h3{
+	margin-top: 0;
+}
+/* Work Experience
+-------------------------*/
+.work-experience {
+	background: steelblue;
+	float: left;
+	width: 800px;
+	padding: 0 10px;
+}
+.work-experience h2 {
+	font-weight: 600;
+	color: honeydew;
+	text-shadow: 1px 1px 2px rgb(43, 43, 43);
+}
+.call-out2{
+	background: white;
+	margin: 10px 0;
+	padding: 10px 25px;
+	width: 700px;
+	border: darkolivegreen thick outset;
+	border-radius: 8px;
+}
+
+/* Education
+-------------------------*/
+.education{
+	float: left;
+	width: 300px;
+	padding: 0 20px;
+}
+.call-out3{
 	background: white;
 	margin: 10px 0;
 	padding: 10px 25px;
@@ -66,33 +130,23 @@ header {
 	border: darksalmon thick outset;
 	border-radius: 8px;
 }
-/* Work Experience
--------------------------*/
-.work-experience {
-    background: steelblue;
-}
-.call-out2{
-	background: white;
-	margin: 10px 0;
-	padding: 10px 25px;
-	width: 500px;
-	border: darkolivegreen thick outset;
-	border-radius: 8px;
-}
-/* Education
--------------------------*/
-.call-out3{
-	background: white;
-	margin: 10px 0;
-	padding: 10px 25px;
-	width: 500px;
-	border: darksalmon thick outset;
-	border-radius: 8px;
-}
 
 /* Contact Info
 -------------------------*/
 footer {
+	text-align: center;
+	clear: both;
     background:rgb(43, 43, 43);
     color: honeydew;
+}
+footer li{
+    background: darksalmon;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+	display: inline-block;
+	margin-right: 20px;
+}
+footer a{
+	color: honeydew;
 }
