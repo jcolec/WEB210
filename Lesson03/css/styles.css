@@ -49,18 +49,23 @@ h1,h2{
 .content-wrap{
 	width: 1000px;
 	margin: 0 auto;
-	padding: 60px 0;
+	padding: 60px 0 20px;
 }
 /* Nav
 -------------------------*/
+nav{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0 0 20px;
+}
 nav ul{
 	text-align: left;
 	list-style: none;
-}
-nav ul li{
-	font: 'Ralerway' bold 25px;
+	font: bold 25px;
+	font-family: 'Raleway', sans-serif;
 	display: inline-block;
 	position: relative;
+	margin: 0 10px;
 	padding: 15px 20px; 
 	color: rgb(43, 43, 43);
 	border: darksalmon thick outset;
@@ -68,28 +73,26 @@ nav ul li{
 	background: honeydew;
 	cursor: pointer;
 }
-nav ul li:hover{
+nav ul:hover{
 	background: darksalmon;
 	color: steelblue;
 	border: steelblue thick outset;
 	border-radius: 8px;
 }
-nav ul li ul{
+nav ul li{
 	padding: 0;
 	position: absolute;
 	top: 48px;
 	left: -10000px;
 	width: 150px;
 }
-nav ul li ul li{
+nav ul li{
 	background: white;
 	display: block;
 	color: rgb(43, 43, 43);
 }
-nav ul li ul li:hover{
+nav ul li:hover{
 	background: darksalmon;
-}
-nav ul li:hover ul{
 	display: block;
 	left: 0px;
 }
