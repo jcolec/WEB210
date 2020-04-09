@@ -1,0 +1,232 @@
+/*
+COLOR PALETTE
+black
+gray: rgb(193, 193, 193)
+purple: rgb(69, 48, 118)
+pink: rgb(141, 47, 115)
+blue: rgb(103, 137, 163)
+
+font-family: 'Permanent Marker', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* Global Styles
+-------------------------*/
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}  
+main{
+    align-content: center;
+    margin: 0 0 25px 0;
+    max-width: flex;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 400px;
+    grid-template-rows: 150px, 150px, 800px, 150px;
+    justify-content: center;
+    align-content: end;
+}
+h1{
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px black;
+    line-height: 1;
+}
+h2{
+    color: black;
+    text-shadow: 1px 1px 2px rgb(193, 193, 193);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 35px;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: .5;
+}
+h3{
+    color: black;
+    text-shadow: 1px 1px 2px rgb(193, 193, 193);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+    line-height: .5;
+}
+h4{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    line-height: .5;
+}
+p{
+    color: white;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 15px;
+}
+/* Body Styles
+-------------------------*/
+body{
+    border: 50px, solid, rgb(141, 47, 115);
+    align-content: center;
+    background: rgb(193,193,193);
+    text-align: center;
+    justify-content: center;
+}
+/* Header Styles
+-------------------------*/
+header{
+    max-width: flex;
+    background: rgb(69, 48, 118);
+}
+/* Nav Styles
+-------------------------*/
+nav{
+    clear: both;
+    display: inline;
+    max-width: flex;
+    background: rgb(141, 47, 115);
+}
+/* Column Styles
+-------------------------*/
+.column1{
+    max-width: 400px;
+    background: rgb(103, 137, 163);
+}
+.column2{
+    max-width: 400px;
+    background: rgb(103, 137, 163);
+}
+.column3{
+    max-width: 400px;
+    background: rgb(103, 137, 163);
+}
+/* Section Styles
+-------------------------*/
+.project{
+display: flex;
+margin-bottom: 25px;
+}
+img{
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+}
+/* Footer Styles
+-------------------------*/
+footer{
+    max-width: flex;
+    background: rgb(69, 48, 118);
+    clear: both;
+}
+footer h4{
+    display: inline-block;
+    padding-right: 25px;
+}
+/* Responsive
+-------------------------*/
+@media screen and (min-width:1050px){
+    main{
+    grid-gap: 25px;
+    grid-template-columns: repeat(8, 150px);
+    grid-template-rows: 150px, 150px, 800px, 150px;
+    }
+    h1{
+        font-size: 80px;
+    }
+    h2{
+        font-size: 45px;
+        display: inline-block;
+    }
+    h3{
+        font-size: 35px;
+    }
+    h4{
+        font-size: 25px;
+    }
+    p{
+        font-size: 20px;
+    }
+    header{
+        grid-column-start: 2;
+        grid-column-end: 8;
+    }
+    nav{
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row: 2;
+    }
+    .column1{
+        grid-column-start:2;
+        grid-column-end: 4; 
+        grid-row: 3;
+    }
+    .column2{
+        grid-column-start:4;
+        grid-column-end: 6;
+        grid-row: 3;
+    }
+    .column3{
+        grid-column-start:6;
+        grid-column-end: 8;
+        grid-row: 3; 
+    }
+    footer{
+        grid-column-start: 2;
+        grid-column-end: 8;
+        grid-row: 4;
+    }
+}
+@media screen and (min-width:600px){
+    main{
+    grid-gap: 25px;
+    grid-template-columns: repeat(8, 150px);
+    grid-template-rows: 150px, 150px, 800px, 150px;
+    }
+    h1{
+        font-size: 70px;
+    }
+    h2{
+        font-size: 40px;
+        display: inline-block;
+    }
+    h3{
+        font-size: 30px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+    header{
+        grid-column-start: 2;
+        grid-column-end: 8;
+    }
+    nav{
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row: 2;
+    }
+    .column1{
+        grid-column-start:2;
+        grid-column-end: 4; 
+        grid-row: 3;
+    }
+    .column2{
+        grid-column-start:4;
+        grid-column-end: 6;
+        grid-row: 3;
+    }
+    .column3{
+        grid-column-start:6;
+        grid-column-end: 8;
+        grid-row: 3; 
+    }
+    footer{
+        grid-column-start: 2;
+        grid-column-end: 8;
+        grid-row: 4;
+    }
+}
